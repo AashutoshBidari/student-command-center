@@ -1,0 +1,159 @@
+
+/* Basic browser reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall page */
+body {
+    font-family: Arial, sans-serif;
+    background: #111318;
+    color: #f1f1f1;
+}
+
+/* Main application layout */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: #191c24;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.logo {
+    font-size: 21px;
+    margin-bottom: 45px;
+}
+
+.logo span {
+    color: #7c83ff;
+}
+
+.menu-label {
+    color: #858995;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/* Navigation */
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar nav a {
+    color: #b8bbc5;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.sidebar nav a:hover {
+    background: #292d3a;
+    color: white;
+}
+
+/* Bottom sidebar text */
+.sidebar-bottom {
+    margin-top: auto;
+    color: #b8bbc5;
+    font-size: 13px;
+}
+
+.sidebar-bottom small {
+    color: #858995;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Top navigation bar */
+.topbar {
+    height: 75px;
+    padding: 0 35px;
+    background: #191c24;
+    border-bottom: 1px solid #2b2e38;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar span {
+    color: #858995;
+    font-size: 13px;
+}
+
+/* Page content */
+.page-content {
+    padding: 35px;
+}
+
+.welcome-section {
+    margin-bottom: 30px;
+}
+
+.welcome-section h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    color: #a2a5af;
+}
+
+/* Dashboard cards */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: #191c24;
+    border: 1px solid #2b2e38;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.dashboard-card h3 {
+    margin-bottom: 15px;
+}
+
+.dashboard-card p {
+    color: #a2a5af;
+    line-height: 1.6;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    .sidebar {
+        width: 170px;
+        padding: 20px 12px;
+    }
+
+    .topbar {
+        padding: 0 15px;
+    }
+
+    .page-content {
+        padding: 20px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,39 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+Dashboard | Student CC
+{% endblock %}
+
+{% block content %}
+
+    <div class="welcome-section">
+        <h1>Welcome to your Dashboard</h1>
+        <p>Manage your college life from one place.</p>
+    </div>
+
+    <div class="dashboard-grid">
+
+        <div class="dashboard-card">
+            <h3>Today's Classes</h3>
+            <p>Your daily schedule will appear here.</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Today's Tasks</h3>
+            <p>Your pending tasks will appear here.</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Attendance</h3>
+            <p>Your attendance summary will appear here.</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Upcoming Exams</h3>
+            <p>Your upcoming exams will appear here.</p>
+        </div>
+
+    </div>
+
+{% endblock %}
